@@ -19,6 +19,8 @@ public class BuqueCarga extends Transporte {
             System.out.println("ID del transporte" + getIdTrasporte());
             System.out.println("Combustible" + getCombustible());
             System.out.println("Cantidad de Contenedores" + cantidadContenedores);
+
+            double costoDeRecorrido
         }
 
     
