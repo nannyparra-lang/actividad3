@@ -13,14 +13,12 @@ public class CamionDeReparto extends Transporte {
     public void viajar(int distancia) {
         if (tieneRefrigeracion) {
             
-            double combustibleGastado = distancia / 10 * 2;
+            double combustibleGastado = (distancia / 10 )* 2;
 
             
             setCombustible(getCombustible() - combustibleGastado);
         } else {
-            double combustibleGastado = distancia / 10.0;
-
-            setCombustible(getCombustible() - combustibleGastado);
+            super.viajar(distancia);
         }
     }
 
