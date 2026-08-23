@@ -20,7 +20,10 @@ public class BuqueCarga extends Transporte {
             System.out.println("Combustible" + getCombustible());
             System.out.println("Cantidad de Contenedores" + cantidadContenedores);
 
-            double costoDeRecorrido
+            double tarifaPorContenedor = 150;
+            double costoDeRecorrido = this.cantidadContenedores * tarifaPorContenedor;
+
+            System.out.println("Costo del viaje" + costoDeRecorrido + "USD");
         }
 
     
