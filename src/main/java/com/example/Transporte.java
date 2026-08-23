@@ -56,7 +56,7 @@ public class Transporte {
     public void viajar (int distancia) {
 
         double combustibleGastado = distancia / 10;
-        combustible = combustible - combustibleGastado;
+        setCombustible (getCombustible() - combustibleGastado);
     }
 
 
